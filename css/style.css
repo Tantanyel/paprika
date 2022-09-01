@@ -1,0 +1,1895 @@
+@font-face {
+  font-family: Futurica;
+  src: url(../fonts/FuturicaLt.ttf);
+}
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.formsend input::-webkit-input-placeholder,
+.formsend textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+.formsend input::-moz-placeholder,
+.formsend textarea::-moz-placeholder {
+  color: #fff;
+}
+.formsend input:-moz-placeholder,
+.formsend textarea::-moz-placeholder {
+  color: #fff;
+}
+.formsend input:-ms-input-placeholder,
+.formsend textarea::-moz-placeholder {
+  color: #fff;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Futurica;
+  background: #fff;
+}
+.fmenu {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 80px;
+  z-index: 5;
+  transition: all 0.3s;
+}
+.corz {
+  display: block;
+  position: fixed;
+  height: 25px;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.corz:hover {
+  opacity: 1;
+}
+.corz img {
+  height: 29px;
+  vertical-align: middle;
+}
+.corz span,
+.fav span {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  color: #fff;
+  background: #cd0826;
+  font-size: 10px;
+  line-height: 16px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+.fav {
+  display: block;
+  position: fixed;
+  height: 25px;
+  z-index: 10;
+  top: 32px;
+  right: 80px;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.fav:hover {
+  opacity: 1;
+}
+.fav img {
+  height: 26px;
+  vertical-align: middle;
+}
+.fav span {
+  top: -2px;
+}
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 305px;
+  height: 75px;
+  z-index: 10;
+  transition: all 0.3s;
+}
+.logo img {
+  width: 305px;
+  height: 75px;
+  transition: all 0.3s;
+}
+.logob {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 245px;
+  height: 60px;
+  z-index: 10;
+}
+.logob img {
+  width: 245px;
+  height: 60px;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(140, 140, 139, 0.95);
+  opacity: 0;
+  z-index: 15;
+  display: none;
+  overflow: auto;
+}
+.contmenu {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10%;
+  font-size: 0;
+}
+.contmenu .stolbmenu {
+  display: inline-block;
+  width: 25%;
+  font-size: 22px;
+  vertical-align: top;
+}
+.contmenu .stolbmenu a,
+.contmenu .stolbmenu label {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.sal {
+  color: #ff2121 !important;
+  opacity: 1 !important;
+}
+.contmenu .stolbmenu .menuv a {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.3s;
+  margin-bottom: 0px;
+}
+.contmenu .stolbmenu label:after {
+  content: "+";
+  position: absolute;
+  display: inline-block;
+  margin-top: -3px;
+  margin-left: 5px;
+}
+.contmenu .stolbmenu a:hover,
+.contmenu .stolbmenu label:hover {
+  opacity: 1;
+}
+.contmenu .stolbmenu input[type=checkbox] {
+  display: none;
+}
+.contmenu .stolbmenu input[type=checkbox]:checked + label:after {
+  content: "–";
+  margin-top: -1px;
+  margin-left: 7px;
+}
+.contmenu .stolbmenu input[type=checkbox]:checked + label + .menuv a {
+  max-height: 30px;
+  margin-bottom: 20px;
+}
+.icomenu {
+  position: fixed;
+  width: 29px;
+  height: 22px;
+  z-index: 20;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.icomenu:hover {
+  opacity: 1;
+}
+.icomenu span {
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -0.5px;
+  transition: all 0.3s;
+}
+.iblack span {
+  background: #000;
+}
+.icomenuactive span {
+  background: #fff;
+}
+.icomenu .up {
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+}
+.icomenu .mid {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.icomenu .down {
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
+.icomenuactive .up {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.icomenuactive .mid {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+  transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.icomenuactive .down {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+.fmenusc {
+  height: 60px;
+}
+.logosc {
+  width: 170px;
+  height: 42px;
+}
+.logosc img {
+  width: 170px;
+  height: 42px;
+}
+.icomenusc {
+  top: 20px;
+  left: 20px;
+}
+.corsc {
+  top: 20px;
+  right: 20px;
+}
+.favsc {
+  top: 23px;
+  right: 65px;
+}
+.soc {
+  position: fixed;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  z-index: 10;
+  font-size: 0;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.socb {
+  position: absolute;
+  bottom: 40px;
+}
+.soc a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.soc a:hover {
+  opacity: 1;
+}
+.soc a:first-child {
+  margin-left: 0px;
+}
+.soc a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.soc.socb a img {
+  border: 1px solid #000;
+}
+.copy {
+  position: fixed;
+  display: block;
+  margin: 0;
+  text-align: center;
+  z-index: 10;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.copyb {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.8);
+}
+.copy a {
+  color: #fff;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.copyb a {
+  color: #000;
+}
+.copy a:hover {
+  opacity: 1;
+}
+.centerland {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+.punct {
+  position: fixed;
+  height: 70px;
+  width: 10px;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  z-index: 10;
+}
+.punct a {
+  display: block;
+  background: transparent;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.punct a:hover {
+  width: 12px;
+  height: 12px;
+  margin-left: -1px;
+  margin-top: 9px;
+  margin-bottom: -1px;
+}
+.punct a.activepimp {
+  background: rgba(255, 255, 255, 0.3);
+}
+.fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+.gkn {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+}
+.gkn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.formsend {
+  position: absolute;
+  width: 80%;
+  height: 330px;
+  margin: auto;
+  max-width: 600px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0;
+}
+.formsend h2 {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  opacity: 0.8;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.formcont {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+.formcont .pcont {
+  font-size: 20px;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  opacity: 0.8;
+}
+.formcont .pcont img {
+  height: 30px;
+  vertical-align: middle;
+}
+.formcont .pcont span {
+  color: #fff;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+.formsend input,
+.formsend textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 2px;
+  font-family: Futurica;
+  padding: 5px;
+  padding-top: 8px;
+  vertical-align: top;
+}
+.formsend input[type=text] {
+  width: 45%;
+}
+.formsend input[type=email] {
+  width: 45%;
+  margin-left: 10%;
+}
+.formsend textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 15px;
+  resize: none;
+}
+.formsend .sendmes {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 2px;
+  font-family: Futurica;
+  padding: 5px;
+  padding-top: 8px;
+  vertical-align: top;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.formsend .sendmes:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.formsend .oksend {
+  display: block;
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+.content {
+  position: relative;
+  width: calc(100% - 500px);
+  max-width: 1500px;
+  min-height: calc(100% - 90px);
+  margin: 0 auto;
+  margin-top: 90px;
+  padding-bottom: 90px;
+}
+.katalogmenu {
+  width: 250px;
+  height: calc(100% - 90px);
+  top: 90px;
+  position: fixed;
+}
+.show {
+  display: block;
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  padding: 9px 0;
+  font-size: 25px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.show:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.katalogmenu .stolbkatalog {
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+.katalogmenu .stolbkatalog a,
+.katalogmenu .stolbkatalog span {
+  display: block;
+  font-size: 22px;
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.katalogmenu .stolbkatalog span {
+  color: #404040;
+}
+.katalogmenu .stolbkatalog a:hover {
+  color: #404040;
+}
+.katalogitem {
+  font-size: 0;
+}
+.itemcont {
+  display: inline-block;
+  width: 46%;
+  margin: 0 2%;
+  margin-bottom: 4%;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+}
+.itemcont:before {
+  content: "";
+  display: block;
+  padding-top: calc(110% + 115px);
+}
+.itemkn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0 0 0 3px;
+}
+.corztable {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 100px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  width: 145px;
+  height: 55px;
+  padding: 10px;
+  padding-right: 0;
+}
+.corztable a {
+  display: block;
+  width: 100%;
+  color: #ff2121;
+  font-size: 20px;
+  text-align: center;
+  padding-right: 10px;
+  padding-top: 4px;
+  font-weight: bold;
+}
+.corztable span {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  background: #fff;
+  vertical-align: middle;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.corztable span:hover {
+  border: 1px solid #ff2121;
+}
+.corztable span.non {
+  background: #eee;
+  color: #aaa;
+}
+.corztable span.non:hover {
+  border: 1px solid #ccc;
+}
+.itemkn > span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.itemkn span:hover {
+  opacity: 1;
+}
+.itemkn .favitem.activei {
+  background-image: url(../img/heartactive.png);
+}
+.itemkn .corzitem.activei {
+  background-image: url(../img/corzactive.png);
+}
+.itemkn .favitem {
+  background-image: url(../img/heartb.png);
+  margin-right: 10px;
+}
+.itemkn .corzitem {
+  background-image: url(../img/corzb.png);
+  margin-left: 0px;
+}
+.item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  border-radius: 0px 0px 3px 3px;
+}
+.saleitem .proc {
+  position: absolute;
+  bottom: 130px;
+  left: 0;
+  padding: 10px;
+  margin: auto;
+  font-size: 30px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0px 5px 5px 0px;
+  color: #ff2121;
+  opacity: 0.8;
+}
+.item .imgi {
+  width: 100%;
+  height: calc(100% - 115px);
+}
+.item .imgi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item .opisitem {
+  width: 100%;
+  color: #000;
+  background: #fff;
+}
+.item .opisitem .name {
+  display: table;
+  width: 100%;
+  height: 75px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #777;
+}
+.item .opisitem .prise {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.item .opisitem .prise s {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.item .opisitem .prise p {
+  display: inline-block;
+  margin: 0;
+  font-size: 22px;
+}
+.saleitem .opisitem .prise p {
+  color: #ff2121;
+  font-weight: bold;
+}
+.sliderlook {
+  margin-bottom: 20px;
+  position: relative;
+}
+.sliderlook .slid {
+  width: 100%;
+  height: 32vw;
+  position: relative;
+}
+.sliderlook .slid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sliderlook .slid a {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  color: #000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 35px;
+  text-decoration: none;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+.sliderlook .arrows {
+  height: 100px;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+  font-size: 100px;
+  color: #000;
+  opacity: 0.4;
+  position: absolute;
+  top: -38px;
+  cursor: pointer;
+  transition: all 0.3s;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.sliderlook .arrows.lefta {
+  left: -30px;
+}
+.sliderlook .arrows.righta {
+  right: -30px;
+}
+.sliderlook .arrows:hover {
+  opacity: 0.8;
+}
+.zag {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 25px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+}
+.zag span {
+  padding: 0 30px;
+  background: #fff;
+  position: relative;
+}
+.zag:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: #000;
+}
+.bigbook {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2%;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+}
+.bigbook:before {
+  content: "";
+  display: block;
+  padding-top: 65%;
+}
+.bigbook .bookitem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.bigbook .bookitem .imgi {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+.bigbook .bookitem .imgi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bigbook .bookitem .bookname {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  color: #777;
+}
+.bigbook .bookitem .bookname a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+.allbook {
+  font-size: 0px;
+}
+.minbook {
+  display: inline-block;
+  width: 48%;
+  margin: 0 2%;
+  margin-bottom: 4%;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+}
+.minbook:nth-child(odd) {
+  margin-left: 0;
+}
+.minbook:nth-child(even) {
+  margin-right: 0;
+}
+.minbook:before {
+  content: "";
+  display: block;
+  padding-top: 120%;
+}
+.minbook .bookitem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.minbook .bookitem .imgi {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+.minbook .bookitem .imgi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.minbook .bookitem .bookname {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  color: #777;
+}
+.minbook .bookitem .bookname a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+.recproduct {
+  position: relative;
+  width: calc(100% - 500px);
+  max-width: 1198px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.product {
+  position: relative;
+  width: calc(100% - 800px);
+  max-width: 898px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.photo {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+}
+.photo:before {
+  content: "";
+  display: block;
+  padding-top: 110%;
+}
+.photo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.pimpphoto {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  left: calc(-150px + 4%);
+  cursor: pointer;
+}
+.pimpphoto span {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+.pimpphoto span:hover {
+  opacity: 1;
+}
+.pimpphoto span:before {
+  content: "";
+  display: block;
+  padding-top: 110%;
+}
+.pimpphoto span img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.opisprod {
+  width: 320px;
+  position: absolute;
+  top: 0;
+  right: -350px;
+}
+.opisprod .nameblprod {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.opisprod .nameblprod p {
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.opisprod .nameblprod i {
+  font-size: 16px;
+  font-style: normal;
+  display: block;
+  margin-bottom: 20px;
+}
+.opisprod .nameblprod .priseprod {
+  display: block;
+  margin-bottom: 20px;
+}
+.opisprod .nameblprod .priseprod s {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.opisprod .nameblprod .priseprod p {
+  display: inline-block;
+  margin: 0;
+  font-size: 22px;
+}
+.opisprod .nameblprod .saleprod p {
+  color: #ff2121;
+  font-weight: bold;
+}
+.opisprod .paramprod {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.opisprod .paramprod .pprod {
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 0;
+}
+.opisprod .paramprod .pprod span {
+  display: inline-block;
+  font-size: 20px;
+  width: 80px;
+  vertical-align: middle;
+}
+.opisprod .paramprod .pprod a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.opisprod .paramprod .pprod a:hover {
+  border: 1px solid #ff2121;
+}
+.opisprod .paramprod .pprod a.actprod {
+  border: 1px solid #ff2121;
+}
+.opisprod .paramprod .colit {
+  font-size: 14px;
+  margin-left: 80px;
+  margin-top: -21px;
+  display: block;
+  color: #ff2121;
+  width: 125px;
+  text-align: center;
+}
+.opisprod .btnprod {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  vertical-align: middle;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(0, 0, 0, 0);
+}
+.opisprod .btnprod:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.opisprod .btnprod:after {
+  content: "";
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.opisprod .btnprod img {
+  max-height: 30px;
+  max-width: 30px;
+  vertical-align: middle;
+}
+.opisprod .btnprod i {
+  font-style: normal;
+  position: absolute;
+  left: 50px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+.opisprod .overlayprod {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tsize {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 30;
+}
+.tsize .contsize {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 450px;
+  height: 300px;
+  background: #fff;
+  padding: 30px;
+}
+.tsize .contsize .cloz {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/cloz.png);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.tsize .contsize .cloz:hover {
+  opacity: 0.6;
+}
+.tsize .contsize table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+.tsize .contsize table tr {
+  margin: 0;
+}
+.tsize .contsize table th {
+  background: #e2e2e2;
+  border: 1px solid #a8a8a8;
+  margin: 0;
+  text-align: left;
+  padding: 10px;
+}
+.tsize .contsize table td {
+  border: 1px solid #a8a8a8;
+  margin: 0;
+  text-align: center;
+}
+.opisproduct {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 30;
+}
+.opisproduct .contopis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 450px;
+  height: 500px;
+  background: #fff;
+  padding-top: 30px;
+}
+.opisproduct .contopis .skrolopis {
+  overflow: auto;
+  padding: 30px;
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+}
+.opisproduct .contopis .cloz {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/cloz.png);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.opisproduct .contopis .cloz:hover {
+  opacity: 0.6;
+}
+.opisproduct .contopis h2 {
+  margin-bottom: 10px;
+}
+.opisproduct .contopis p {
+  margin: 0;
+}
+.corzdob {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 30;
+}
+.corzdob .contcorz {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 450px;
+  height: 200px;
+  background: #fff;
+  padding: 30px;
+}
+.corzdob .contcorz .cloz {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/cloz.png);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.corzdob .contcorz .cloz:hover {
+  opacity: 0.6;
+}
+.corzdob .contcorz h2 {
+  margin: 0;
+  text-align: center;
+}
+.corzdob .contcorz .btnprod {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  vertical-align: middle;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(0, 0, 0, 0);
+}
+.corzdob .contcorz .btnprod:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.corzdob .contcorz .btnprod:after {
+  content: "";
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.corzdob .contcorz .btnprod img {
+  max-height: 30px;
+  max-width: 30px;
+  vertical-align: middle;
+}
+.corzdob .contcorz .btnprod i {
+  font-style: normal;
+  position: absolute;
+  left: 50px;
+  text-transform: uppercase;
+  margin-top: 3px;
+  color: #000;
+}
+.cartcont {
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+}
+.cartitem {
+  font-size: 0;
+  margin-bottom: 30px;
+}
+.cartitem .imgcart {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 90px;
+}
+.cartitem .imgcart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cartitem .namecart {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  width: calc(40% - 70px);
+  padding-left: 20px;
+}
+.cartitem .namecart a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+.cartitem .namecart a:hover {
+  opacity: 0.6;
+}
+.cartitem .namecart span {
+  font-size: 16px;
+}
+.cartitem .cartparam {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(60% - 50px);
+  padding-left: 20px;
+}
+.cartitem .cartparam .pcart {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 28%;
+}
+.cartitem .cartparam .pcart span {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.cartitem .cartparam .pcart a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cartitem .cartparam .numitem {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 15%;
+}
+.cartitem .cartparam .numitem a {
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cartitem .cartparam .numitem a.pl {
+  right: 5px;
+}
+.cartitem .cartparam .numitem a.mi {
+  left: 5px;
+  top: 2px;
+}
+.cartitem .cartparam .numitem input {
+  -moz-appearance: textfield;
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 100%;
+  font-family: Futurica;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.cartitem .cartparam .numitem input::-webkit-inner-spin-button {
+  display: none;
+}
+.cartitem .cartparam .numitem .pricered {
+  border: 1px solid #d73951 !important;
+}
+.cartitem .cartparam .cartprice {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  width: 29%;
+  font-size: 20px;
+  text-align: right;
+}
+.cartitem .cartparam .delcart {
+  position: absolute;
+  right: -40px;
+  height: 30px;
+  width: 40px;
+  opacity: 0;
+  cursor: pointer;
+  background-image: url(../img/trash.png);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: right;
+  transition: all 0.3s;
+}
+.cartitem:hover .delcart {
+  opacity: 1;
+}
+.itogo {
+  width: 100%;
+  text-align: right;
+  font-size: 20px;
+}
+.itogo p {
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+}
+.knoform {
+  display: block;
+  margin: 30px auto;
+  width: 300px;
+  height: 42px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  color: #000;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+.knoform:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.formcart {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 30;
+  overflow: auto;
+}
+.formcart .cloz {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/cloz.png);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.formcart .cloz:hover {
+  opacity: 0.6;
+}
+.formcart form {
+  width: 60%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.formcart form .hid {
+  display: none !important;
+}
+.formcart form .cap {
+  width: 304px;
+  height: 78px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.formcart form input[type=text] {
+  display: block;
+  width: 550px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: Futurica;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.formcart form textarea {
+  display: block;
+  width: 550px;
+  height: 130px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: Futurica;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 5px 10px;
+  resize: none;
+}
+.formcart form input[type=submit] {
+  display: block;
+  width: 275px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: Futurica;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 25px;
+  transition: all 0.3s;
+}
+.formcart form input[type=submit]:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.formcart form .hrform {
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.formcart form .hrform a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  transition: all 0.3s;
+}
+.formcart form .hrform a:hover {
+  opacity: 0.6;
+}
+.formcart form p {
+  display: block;
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.formcart form .oplata {
+  display: block;
+  width: 550px;
+  margin: 0 auto;
+  font-size: 0;
+  margin-bottom: 20px;
+}
+.formcart form .oplata .radio {
+  display: none;
+}
+.formcart form .oplata .radio + label {
+  display: inline-block;
+  width: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.formcart form .oplata .radio:checked + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-image: url(../img/radio.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px;
+}
+.formcart form .oplata .radio:not(checked) + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.faq {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.faq span {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.faq > a {
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.faq p {
+  display: none;
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 18px;
+}
+.faq p a {
+  color: #000;
+  font-weight: bold;
+}
+.infocont p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.aboutcont img {
+  width: 100%;
+}
+.aboutcont p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.aboutcont h4 {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.revc {
+  margin-top: 0;
+}
+.formrev {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.formrev form {
+  width: 550px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.formrev form h2 {
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.formrev form input[type=text] {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: Futurica;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.formrev form textarea {
+  display: block;
+  width: 100%;
+  height: 130px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: Futurica;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 5px 10px;
+  resize: none;
+}
+.formrev form input[type=submit] {
+  display: block;
+  width: 275px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: Futurica;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 25px;
+  transition: all 0.3s;
+}
+.formrev form input[type=submit]:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.formrev form .cap {
+  width: 304px;
+  height: 78px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.formrev .downrev {
+  width: 200px;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.formrev .downrev:hover {
+  opacity: 0.6;
+}
+.formrev .downrev span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.formrev .downrev img {
+  width: 40px;
+}
+.rev {
+  margin-bottom: 20px;
+}
+.rev .namerev {
+  margin-bottom: 10px;
+}
+.rev .namerev span {
+  font-size: 20px;
+}
+.rev .namerev i {
+  font-style: normal;
+  font-size: 16px;
+  margin-left: 20px;
+  color: #666;
+}
+.rev p {
+  margin: 0;
+  font-size: 18px;
+}
+.rev .otvetm {
+  text-align: right;
+  margin-top: 10px;
+}
+.rev .otvetm span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.rev .otvetm span:before {
+  display: inline-block;
+  content: "▽";
+  margin-right: 10px;
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}
+.rev .otvetm span:hover {
+  opacity: 0.6;
+}
+.rev .otvetm span.active:before {
+  transform: rotate(180deg);
+}
+.rev .otvetm p {
+  display: none;
+}
+.contacont .containfo p {
+  font-size: 18px;
+  color: #777;
+}
+.contacont .containfo p a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+.contacont .karta {
+  margin-top: 30px;
+}
+.contacont .karta h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 22px;
+}
+.contacont .karta .punctsam {
+  margin-bottom: 30px;
+}
+.contacont .karta .punctsam span {
+  display: block;
+  margin-bottom: 5px;
+}
+.contacont .karta .punctsam .kartaif {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.contacont .karta .punctsam .kartaif:before {
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+.contacont .karta .punctsam .kartaif iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.revsoob {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  padding-top: 15px;
+  margin-top: -10px;
+  border-radius: 3px;
+  background: #d8f9c3;
+}
+.revsoob.err {
+  background: #fba7a7;
+}
+.revsoob a {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: url(../img/cloz.png) center no-repeat;
+  background-size: 10px;
+  cursor: pointer;
+}
+.oplcl {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.oplcl .hid {
+  display: none;
+}
+.oplcl .subm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 280px;
+  height: 50px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 22px;
+  font-family: Futurica;
+  background: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  color: #000;
+  border-radius: 2px;
+  border: 1px solid #000;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.oplcl .subm:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,708 @@
+@media only screen and (min-width: 0px) and (max-width: 540px) {
+	.fmenu {
+		height: 60px;
+	}
+	.punct {
+		display: none;
+	}
+	.logo {
+		top: 12px;
+		width: 140px;
+		height: 34px;
+	}
+	.logo img {
+		width: 140px;
+		height: 34px;
+	}
+	.icomenu {
+		width: 20px;
+		height: 17px;
+		top: 22px;
+		left: 20px;
+	}
+	.icomenu .up {
+		-webkit-transform: translate3d(0, -8px, 0);
+		transform: translate3d(0, -8px, 0);
+	}
+	.icomenu .down {
+		-webkit-transform: translate3d(0, 8px, 0);
+		transform: translate3d(0, 8px, 0);
+	}
+	.icomenuactive .up {
+		-webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+		transform: translate3d(0, 0, 0) rotate(45deg);
+	}
+	.icomenuactive .down {
+		-webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+		transform: translate3d(0, 0, 0) rotate(-45deg);
+	}
+	.corz {
+		height: 22px;
+		top: 20px;
+		right: 20px;
+	}
+	.corz img {
+		height: 22px;
+	}
+	.fav {
+		height: 22px;
+		top: 23px;
+		right: 55px;
+	}
+	.fav img {
+		height: 18px;
+	}
+	.fav span,
+	.corz span {
+		font-size: 8px;
+		width: 12px;
+		height: 12px;
+		right: -10px;
+		line-height: 12px;
+	}
+	.fav span {
+		top: -3px;
+	}
+	.soc {
+		width: 150px;
+		height: 30px;
+		bottom: 30px;
+	}
+	.socb {
+		bottom: 40px;
+	}
+	.soc a {
+		width: 30px;
+		height: 30px;
+		margin-left: 30px;
+	}
+	.soc a img {
+		width: 30px;
+		height: 30px;
+	}
+	.copy {
+		font-size: 10px;
+	}
+	.copyb {
+		bottom: 10px;
+	}
+	.gkn {
+		height: 35px;
+		font-size: 20px;
+	}
+	.formsend {
+		width: 90%;
+		height: 390px;
+	}
+	.formsend h2 {
+		font-size: 16px;
+	}
+	.formcont .pcont {
+		font-size: 18px;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		opacity: 0.8;
+	}
+	.formsend input[type=text] {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.formsend input[type=email] {
+		width: 100%;
+		margin-left: 0;
+	}
+	.formsend .sendmes {
+		width: 100%;
+		margin-left: 0;
+	}
+	.formsend input,
+	.formsend textarea {
+		font-size: 15px;
+	}
+	.content {
+		min-height: calc(100% - 60px);
+		margin-top: 60px;
+	}
+	.show {
+		width: 90%;
+		font-size: 20px;
+		height: 40px;
+		padding: 7px 0;
+	}
+	.itemkn span {
+		margin: 5px;
+		width: 22px;
+		height: 22px;
+	}
+	.zag {
+		font-size: 16px;
+		margin: 20px 0;
+	}
+	.bigbook .bookitem .bookname,
+	.minbook .bookitem .bookname {
+		font-size: 12px;
+	}
+	.pimpphoto {
+		display: none;
+	}
+	.opisprod {
+		width: 300px;
+		margin: 0 auto;
+		position: static;
+		margin-top: 30px;
+	}
+	.tsize .contsize {
+		width: 320px;
+	}
+	.opisproduct .contopis {
+		width: 100%;
+		height: 100%;
+	}
+	.corzdob .contcorz {
+		width: 320px;
+	}
+	.corzdob .contcorz .btnprod img {
+		max-height: 20px;
+		max-width: 20px;
+	}
+	.corzdob .contcorz .btnprod i {
+		font-size: 14px;
+		left: 40px;
+		margin-top: 1px;
+	}
+	.corzdob .contcorz .btnprod:after {
+		height: 20px;
+	}
+	.corztable {
+		width: 95px;
+		height: 35px;
+		padding: 5px;
+		padding-right: 0;
+	}
+	.corztable span {
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.corztable a {
+		font-size: 14px;
+		padding-right: 5px;
+		padding-top: 4px;
+	}
+	.oplcl .subm{
+		height: 35px;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 820px) {
+	.contmenu .stolbmenu {
+		width: 100%;
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+	.contmenu .stolbmenu:last-child {
+		border-bottom: none;
+	}
+	.contmenu .stolbmenu a,
+	.contmenu .stolbmenu label {
+		text-align: left;
+		margin-bottom: 0px;
+		padding-bottom: 8px;
+		padding-top: 12px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	}
+	.contmenu .stolbmenu .menuv a {
+		padding-bottom: 0px;
+		padding-top: 0px;
+		border-bottom: 0px solid rgba(255, 255, 255, 0.2);
+	}
+	.contmenu .stolbmenu input[type=checkbox]:checked+label+.menuv a {
+		padding-bottom: 8px;
+		padding-top: 12px;
+		margin-bottom: 0px;
+		max-height: 50px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	.content {
+		width: 100%;
+	}
+	.katalogmenu {
+		display: none;
+	}
+	.sliderlook .slid a {
+		top: inherit;
+		height: auto;
+		font-size: 20px;
+	}
+	.sliderlook .arrows {
+		color: #fff;
+	}
+	.sliderlook .arrows.lefta {
+		left: 10px;
+	}
+	.sliderlook .arrows.righta {
+		right: 10px;
+	}
+	.minbook {
+		width: 49.5%;
+		margin: 0 0.5%;
+	}
+	.recproduct {
+		width: calc(100%);
+	}
+	.product {
+		width: calc(100%);
+	}
+	.opisprod .nameblprod p {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.opisprod .nameblprod i {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.opisprod .nameblprod .priseprod s {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+	.opisprod .nameblprod .priseprod p {
+		font-size: 18px;
+	}
+	.opisprod .btnprod:after {
+		height: 20px;
+	}
+	.opisprod .btnprod img {
+		max-height: 20px;
+		max-width: 20px;
+	}
+	.opisprod .btnprod i {
+		font-size: 14px;
+		left: 40px;
+		margin-top: 1px;
+	}
+	.faqcont {
+		padding: 0 10px;
+	}
+	.infocont {
+		padding: 0 10px;
+	}
+	.aboutcont p {
+		padding: 0 5px;
+	}
+	.aboutcont h4 {
+		padding: 0 5px;
+	}
+	.revtcont {
+		padding: 0 5px;
+	}
+}
+
+@media only screen and (min-width: 821px) and (max-width: 1000px) {
+	.contmenu .stolbmenu {
+		font-size: 18px;
+	}
+	.contmenu .stolbmenu a {
+		margin-bottom: 10px;
+	}
+	.content {
+		width: calc(100% - 300px);
+	}
+	.katalogmenu {
+		width: 150px;
+	}
+	.katalogmenu .stolbkatalog {
+		padding: 0 10px;
+	}
+	.katalogmenu .stolbkatalog a,
+	.katalogmenu .stolbkatalog span {
+		font-size: 16px;
+	}
+	.itemcont:before {
+		padding-top: calc(110% + 100px);
+	}
+	.item .imgi {
+		height: calc(100% - 100px);
+	}
+	.item .opisitem .name {
+		font-size: 16px;
+		height: 65px;
+	}
+	.item .opisitem .prise p,
+	.item .opisitem .prise s {
+		font-size: 18px;
+		height: 35px;
+	}
+	.bigbook .bookitem .bookname,
+	.minbook .bookitem .bookname {
+		font-size: 16px;
+	}
+	.recproduct {
+		width: calc(100% - 300px);
+	}
+	.product {
+		width: calc(100% - 300px);
+	}
+}
+
+@media only screen and (min-width: 541px) and (max-width: 1000px) {
+	.pimpphoto {
+		display: none;
+	}
+	.opisprod {
+		width: 350px;
+		margin: 0 auto;
+		position: static;
+		margin-top: 30px;
+	}
+	.formcart form {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+	.formcart form {
+		width: 100%;
+		padding-top: 20px;
+	}
+	.formcart form input[type=text] {
+		width: 300px;
+		margin-bottom: 10px;
+		height: 25px;
+		font-size: 14px;
+	}
+	.formcart form textarea {
+		width: 300px;
+		margin-bottom: 10px;
+		padding 5px 10px;
+		font-size: 14px;
+		height: 100px;
+	}
+	.formcart form .oplata {
+		width: 300px;
+		margin-bottom: 0
+	}
+	.formcart form .oplata .radio+label {
+		width: 100%;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+	.formcart form .hrform {
+		width: 300px;
+		margin-bottom: 20px;
+	}
+	.formcart form p {
+		width: 300px;
+		margin-bottom: 10px;
+	}
+	.formrev form {
+		width: 100%;
+		height: 370px;
+		padding: 0 5px;
+	}
+	.formrev form input[type=text] {
+		margin-bottom: 10px;
+		height: 25px;
+		font-size: 14px;
+	}
+	.formrev form textarea {
+		margin-bottom: 10px;
+		padding 5px 10px;
+		font-size: 14px;
+		height: 100px;
+	}
+	.formrev .downrev {
+		bottom: 10px;
+	}
+	.formrev .downrev span {
+		font-size: 16px;
+	}
+	.formrev .downrev img {
+		width: 35px;
+	}
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1250px) {
+	.itemcont:before {
+		padding-top: calc(110% + 100px);
+	}
+	.item .imgi {
+		height: calc(100% - 100px);
+	}
+	.item .opisitem .name {
+		font-size: 16px;
+		height: 65px;
+	}
+	.item .opisitem .prise p,
+	.item .opisitem .prise s {
+		font-size: 18px;
+		height: 35px;
+	}
+	.bigbook .bookitem .bookname,
+	.minbook .bookitem .bookname {
+		font-size: 16px;
+	}
+	.product {
+		width: calc(100% - 500px);
+		margin-top: 90px;
+	}
+	.pimpphoto {
+		display: none;
+	}
+	.opisprod {
+		width: 230px;
+		right: -240px;
+	}
+	.opisprod .nameblprod p {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.opisprod .nameblprod i {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.opisprod .nameblprod .priseprod s {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+	.opisprod .nameblprod .priseprod p {
+		font-size: 18px;
+	}
+	.opisprod .btnprod:after {
+		height: 20px;
+	}
+	.opisprod .btnprod img {
+		max-height: 20px;
+		max-width: 20px;
+	}
+	.opisprod .btnprod i {
+		font-size: 15px;
+		left: 40px;
+		margin-top: 1px;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 490px) {
+	.itemcont {
+		width: 49%;
+		margin: 0 0.5%;
+		margin-bottom: 2%;
+	}
+	.item .opisitem .name {
+		font-size: 14px;
+		height: 65px;
+	}
+	.item .opisitem .prise p,
+	.item .opisitem .prise s {
+		font-size: 16px;
+		height: 35px;
+	}
+	.saleitem .proc {
+		padding: 5px;
+		font-size: 18px;
+	}
+	.sliderlook .slid {
+		height: calc(100% - 200px);
+	}
+}
+
+@media only screen and (min-width: 490px) and (max-width: 820px) {
+	.sliderlook .slid {
+		height: 60vw;
+	}
+	.bigbook .bookitem .bookname,
+	.minbook .bookitem .bookname {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 490px) and (max-width: 730px) {
+	.itemcont:before {
+		padding-top: calc(110% + 100px);
+	}
+	.item .imgi {
+		height: calc(100% - 100px);
+	}
+	.item .opisitem .name {
+		font-size: 16px;
+		height: 65px;
+	}
+	.item .opisitem .prise p,
+	.item .opisitem .prise s {
+		font-size: 18px;
+		height: 35px;
+	}
+}
+
+@media only screen and (min-width: 541px) and (max-width: 1235px) {
+	.cartitem .namecart {
+		width: calc(45% - 70px);
+	}
+	.cartitem .namecart a {
+		font-size: 16px;
+	}
+	.cartitem .namecart span {
+		font-size: 14px;
+	}
+	.cartitem .cartparam {
+		width: calc(55% - 40px);
+	}
+	.cartitem .cartparam .pcart {
+		width: 60%
+	}
+	.cartitem .cartparam .pcart span {
+		font-size: 16px;
+		width: 60px;
+	}
+	.cartitem .cartparam .pcart a {
+		height: 20px;
+		width: 20px;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.cartitem .cartparam .numitem {
+		width: 60%
+	}
+	.cartitem .cartparam .numitem input {
+		width: 45px;
+		height: 20px;
+		font-size: 12px;
+	}
+	.cartitem .cartparam .numitem:after {
+		content: "шт.";
+		display: inline-block;
+		font-size: 16px;
+		margin-left: 5px;
+	}
+	.cartitem .cartparam .numitem a {
+		display: none;
+	}
+	.cartitem .cartparam .cartprice {
+		width: 40%;
+		font-size: 16px;
+	}
+	.cartitem .cartparam .delcart {
+		opacity: 1;
+		width: 30px;
+		height: 20px;
+		right: -30px;
+		background-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 540px) {
+	.cartitem {
+		padding: 0 5px;
+	}
+	.cartitem .namecart {
+		width: calc(100% - 70px);
+	}
+	.cartitem .namecart a {
+		font-size: 16px;
+	}
+	.cartitem .namecart span {
+		font-size: 12px;
+	}
+	.cartitem .cartparam {
+		width: calc(100% - 40px);
+		padding-left: 0;
+		margin-top: 5px;
+	}
+	.cartitem .cartparam .pcart {
+		width: 30px;
+		height: 20px;
+	}
+	.cartitem .cartparam .pcart span {
+		display: none;
+	}
+	.cartitem .cartparam .pcart a {
+		height: 20px;
+		width: 20px;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.cartitem .cartparam .numitem {
+		width: 60px;
+	}
+	.cartitem .cartparam .numitem input {
+		width: 30px;
+		height: 20px;
+		font-size: 12px;
+	}
+	.cartitem .cartparam .numitem:after {
+		content: "шт.";
+		display: inline-block;
+		font-size: 16px;
+		margin-left: 5px;
+	}
+	.cartitem .cartparam .numitem a {
+		display: none;
+	}
+	.cartitem .cartparam .cartprice {
+		width: calc(100% - 120px);
+		font-size: 16px;
+		height: 20px;
+	}
+	.cartitem .cartparam .delcart {
+		opacity: 1;
+		width: 30px;
+		height: 20px;
+		right: -30px;
+		background-size: 16px;
+	}
+	.itogo {
+		text-align: center;
+	}
+	.faq {
+		margin-bottom: 10px;
+	}
+	.faq span {
+		font-size: 16px;
+	}
+	.faq a {
+		font-size: 16px;
+	}
+	.faq p {
+		font-size: 14px;
+	}
+	.infocont p {
+		font-size: 14px;
+	}
+	.aboutcont p {
+		font-size: 14px;
+	}
+	.aboutcont h4 {
+		font-size: 14px;
+	}
+	.rev .namerev span {
+		font-size: 18px;
+	}
+	.rev .namerev i {
+		font-size: 14px;
+	}
+	.rev p {
+		font-size: 14px;
+	}
+	.rev .otvetm span {
+		font-size: 18px;
+	}
+	.contacont .containfo p {
+		padding: 0 5px;
+	}
+	.contacont .containfo p a {
+		display: block;
+	}
+	.contacont .karta h2 {
+		font-size: 16px;
+	}
+	.contacont .karta .punctsam span {
+		font-size: 14px;
+		text-align: center;
+	}
+	.contacont .karta .punctsam .kartaif:before {
+		padding-top: 80%;
+	}
+}
